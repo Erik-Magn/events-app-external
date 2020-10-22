@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   
-  <link rel="stylesheet" href="file:///home/user108/sample-master/external/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://storage.googleapis.com/215187928444/bootstrap.min.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Events</title>
   <meta name="HandheldFriendly" content="True" />
@@ -12,7 +12,7 @@
 <body>
   <div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">The Event Sharing App</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,23 +26,6 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-            </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -50,17 +33,22 @@
             </form>
         </div>
         </nav>
+    <div class = "jumbotron">
       <h1>The Event Sharing App</h1>
-    {{{body}}}
+        {{{body}}}
+    </div>
 </div>
-<div>
+<div class="jumbotron">
   <h4>Add an event</h4>
-    <form action="/event" method="post">
-       title: <input name="title" type="text" /> <br />
-       description: <input name="description" type="text" /> <br />
-       <br />
-        <input type="submit" name="submit" value="submit" />
-    </form>
-  </div>
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input class="form-control" id="title" placeholder="Event Title">
+      <label for="description">Description</label>
+      <input class="form-control" id="description" placeholder="Description">
+      <div>
+      <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+</div>
 </body>
 </html>
